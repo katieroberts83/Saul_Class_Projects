@@ -1,0 +1,21 @@
+﻿Katie Roberts
+CMPS 6240
+Intro to Machine Learning
+9.9.16
+‘Start Your Project’ Assignment
+*I will be working with Qiaochu (Chloe) Chen on this project
+
+
+1. Potential Title: Spatial Role Labeling: Assigning Roles to Elements of a Sentence that Inform Spatial Relationships Between Objects
+2. Describing the problem: Phrases that express spatial relationships between objects are pervasive in natural language.  Though such constructions are intuitive to native speakers, they can be highly complex and difficult to interpret by machines.  To illustrate this problem, consider the following sentence adapted from Professor Kordjamshidi’s previous work: Give me the grey book on the big table. Here, there is a spatial relationship established between the grey book and the big table.  The relationship is indicated in this case by the preposition on.  The task of Spatial Role Labeling is to produce the following output: Give me [the gray book]TRAJECTOR [on]SPATIAL_INDICATOR [the big table]LANDMARK. (Kordjamshidi et al.).  The term ‘trajector’ refers to “the entity whose location or position is described”, the ‘spatial indicator’ “ establishes the type of spatial relation” and the term ‘landmark’ refers to”the reference entity in relation to which the location or the motion of the trajector is speciﬁed” (Kordjamshidi et al.).
+3. Why this problem is important: A better model for establishing spatial relations that can be utilized in machine learning is essential to advancing the fields of robotics, navigation, and the like (Kordjamshidi et al.). 
+4. Input Space: The input space in this instance will consist of sentences that establish some type of spatial relationship, such as the example given in question (2): Give me the grey book on the big table.  We will be using the training data referenced in number (6).
+5. Output Space: The output space in the context of Spatial Role Labeling will consist of the same sentences that were inputted, but those sentences will be annotated with the labels described above.  These can consist of trajectors, spatial indicators, landmarks, and motion indicators.  Sentence dependent, the output may also include information regarding other aspects of spatial orientation like direction, region or frame of reference  (Kordjamshidi et al.).
+6. Available data: There is a great deal of existing data relevant to this task.  In the beginning stages of our project we will likely be using the two datasets available on Professor Kordjamshidi’s website that were designed specifically for Spatial Role Labeling (http://www.cs.tulane.edu/~pkordjam/SpRL.htm).  
+7. Learning Paradigm: this task will be implemented using supervised learning.  We will utilize pre-labeled data to train the program to produce the desired outputs.
+
+
+References:
+
+
+Kordjamshidi, Parisa, Martijn Van Otterlo, and Marie-Francine Moens. "Spatial role labeling: Towards extraction of spatial relations from natural language." ACM Transactions on Speech and Language Processing (TSLP), vol. 8, no. 3, 2011., pp. 1-36.doi:10.1145/2050104.2050105.

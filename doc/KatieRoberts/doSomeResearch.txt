@@ -1,0 +1,19 @@
+﻿Katie Roberts
+Intro to Machine Learning
+9.26.16
+“Do Some Research” Assignment
+
+
+As a quick refresher on the purpose of my task, I will be using machine learning techniques to attempt to automatically annotate sentences according to the Spatial Role Labeling annotation scheme used by Professor Kordjamshidi in her earlier work. The Spatial Role Labeling task is a well-established one that is grounded in successful machine learning techniques.  One particular technique that has seen a great deal of success in the previous work conducted is called ‘Pipelining’ (Kordjamshidi et al.).  Essentially, this technique focuses on prioritizing prepositions in a sentence.  It classifies a preposition as spatial or nonspatial, and from there it determines the trajector and landmark indicators.  Although it is possible for a sentence to include a spatial indicator that is not a preposition, doing so is a “realistic bias in English” (Kordjamshidi et al.). In order to achieve this kind of classification, previous work has used a Conditional Random Field (CRF) which is a type of algorithm that is ideal for this type of classification.  Though the specifics of the algorithm are somewhat opaque to me given their mathematical density, the paper explains “The linear chain CRF setting of Mallet uses a forward-backward algorithm to compute the marginal distributions and the Viterbi algorithm to compute the most probable sequence label assignment.”.  I hope to learn more about the algorithms previously employed to ensure that I have a solid understanding of their function.  In terms of the additions that I can make to the project, Kordjamshidi et al. identify some possible future research areas within their paper.  Specifically, it seems that some progress can be made on the linguistic side of this project.  In the conclusion it is noted that “obtaining more data and incorporating additional linguistic elements dealing with focus shift and motion detection are both useful directions”.  I hope to explore the linguistic elements of Spatial Role Labeling in as in-depth a manner as possible.
+
+
+________________
+
+
+References:
+
+
+Kordjamshidi, Parisa, Martijn Van Otterlo, and Marie-Francine Moens. "Spatial role labeling: Towards extraction of spatial relations from natural language." ACM Transactions on Speech and Language Processing (TSLP), vol. 8, no. 3, 2011., pp. 1-36.doi:10.1145/2050104.2050105.
+
+
+ZLATEVL, J. 2007. Spatial semantics. In Hubert Cuyckens and Dirk Geeraerts (eds.) The Oxford Handbook of Cognitive Linguistics, Chapter 13, 318–350.

@@ -1,0 +1,38 @@
+﻿INFO  [2016-10-31 16:30:23,176] C.SpRLExample.SpRLApp$: population starts.
+Reading POS tagger model from edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger ... done [2.7 sec].
+Loading parser from serialized file edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz ... done [1.7 sec].
+INFO  [2016-10-31 16:31:35,827] C.SpRLExample.SpRLApp$: number of all sentences after population:579
+INFO  [2016-10-31 16:31:35,837] C.SpRLExample.SpRLApp$: number of all tokens after population:8892
+INFO  [2016-10-31 16:31:35,841] C.SpRLExample.SpRLApp$: number of all trajectors after population:694
+INFO  [2016-10-31 16:31:35,843] C.SpRLExample.SpRLApp$: number of all landmarks after population:596
+INFO  [2016-10-31 16:31:35,844] C.SpRLExample.SpRLApp$: number of all spatialIndicators after population:650
+INFO  [2016-10-31 16:31:35,863] C.S.SpRLClassifiers$trajectorClassifier$: Reading model file CMPS_3240_6240Fall16.SpRLExample.SpRLClassifiers.trajectorClassifier$.lc from local path.
+INFO  [2016-10-31 16:31:35,868] C.S.SpRLClassifiers$trajectorClassifier$: Reading lexicon file CMPS_3240_6240Fall16.SpRLExample.SpRLClassifiers.trajectorClassifier$.lex from local path.
+INFO  [2016-10-31 16:31:35,873] C.SpRLExample.SpRLApp$: testing trajectors ...
+ Label   Precision Recall   F1   LCount PCount
+----------------------------------------------
+false       93.539 98.195 95.811   8198   8606
+true        48.252 19.885 28.163    694    286
+----------------------------------------------
+Accuracy    92.083   -      -      -      8892
+INFO  [2016-10-31 16:31:36,524] C.SpRLExample.SpRLApp$: done.
+INFO  [2016-10-31 16:31:36,526] C.S.SpRLClassifiers$landmarkClassifier$: Reading model file CMPS_3240_6240Fall16.SpRLExample.SpRLClassifiers.landmarkClassifier$.lc from local path.
+INFO  [2016-10-31 16:31:36,529] C.S.SpRLClassifiers$landmarkClassifier$: Reading lexicon file CMPS_3240_6240Fall16.SpRLExample.SpRLClassifiers.landmarkClassifier$.lex from local path.
+INFO  [2016-10-31 16:31:36,535] C.SpRLExample.SpRLApp$: testing landmarks ...
+ Label   Precision Recall   F1   LCount PCount
+----------------------------------------------
+false       94.218 99.385 96.733   8296   8751
+true        63.830 15.101 24.423    596    141
+----------------------------------------------
+Accuracy    93.736   -      -      -      8892
+INFO  [2016-10-31 16:31:36,819] C.SpRLExample.SpRLApp$: done.
+INFO  [2016-10-31 16:31:36,821] C.S.SpRLClassifiers$spatialIndicatorClassifier$: Reading model file CMPS_3240_6240Fall16.SpRLExample.SpRLClassifiers.spatialIndicatorClassifier$.lc from local path.
+INFO  [2016-10-31 16:31:36,824] C.S.SpRLClassifiers$spatialIndicatorClassifier$: Reading lexicon file CMPS_3240_6240Fall16.SpRLExample.SpRLClassifiers.spatialIndicatorClassifier$.lex from local path.
+INFO  [2016-10-31 16:31:36,830] C.SpRLExample.SpRLApp$: testing spatialIndicators ...
+ Label   Precision Recall   F1   LCount PCount
+----------------------------------------------
+false       99.423 98.314 98.865   8242   8150
+true        81.267 92.769 86.638    650    742
+----------------------------------------------
+Accuracy    97.908   -      -      -      8892
+INFO  [2016-10-31 16:31:37,076] C.SpRLExample.SpRLApp$: done.
